@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amir Faysal | Product Strategy & Full-Stack Engineering</title>
+  <meta name="description" content="Portfolio of Amir Faysal - Full-Stack Engineer & Product Strategist. 4+ Years Experience, 10K+ Users Impacted, 20+ Projects Shipped.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Ambient Cursor & Pointer Ring -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Minimal Floating Sidebar Navigation Controls (Right Edge) -->
+  <div class="side-nav-container">
+    <button onclick="scrollToSection('hero')" title="Home / Hero" class="side-nav-btn active" id="dot-hero">
+      <div class="dot"></div>
+      <span class="tooltip">00 // HERO</span>
+    </button>
+    <button onclick="scrollToSection('competencies-section')" title="Core Competencies" class="side-nav-btn" id="dot-competencies">
+      <div class="dot"></div>
+      <span class="tooltip">01 // COMPETENCIES</span>
+    </button>
+    <button onclick="scrollToSection('timeline-section')" title="Career Timeline" class="side-nav-btn" id="dot-timeline">
+      <div class="dot"></div>
+      <span class="tooltip">02 // TIMELINE</span>
+    </button>
+    <button onclick="scrollToSection('techstack-section')" title="Tech Stack" class="side-nav-btn cyan" id="dot-techstack">
+      <div class="dot"></div>
+      <span class="tooltip">03 // TECH STACK</span>
+    </button>
+    <button onclick="scrollToSection('certificates-section')" title="Certificates" class="side-nav-btn amber" id="dot-certificates">
+      <div class="dot"></div>
+      <span class="tooltip">04 // CERTIFICATES</span>
+    </button>
+    <button onclick="scrollToSection('startup-section')" title="Startup" class="side-nav-btn orange" id="dot-startup">
+      <div class="dot"></div>
+      <span class="tooltip">05 // STARTUP</span>
+    </button>
+    <button onclick="scrollToSection('awards-section')" title="Awards" class="side-nav-btn yellow" id="dot-awards">
+      <div class="dot"></div>
+      <span class="tooltip">06 // AWARDS</span>
+    </button>
+  </div>
+
+  <!-- Top Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-dot"></span>
+        <span class="brand-name">Amir Faysal</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#competencies-section" class="nav-link">Competencies</a>
+        <a href="#timeline-section" class="nav-link">Timeline</a>
+        <a href="#techstack-section" class="nav-link">Tech Stack</a>
+        <a href="#certificates-section" class="nav-link">Certificates</a>
+        <a href="#startup-section" class="nav-link">Startup</a>
+        <a href="#awards-section" class="nav-link">Awards</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="status-badge">
+          <span class="pulse-dot"></span>
+          <span class="status-text">Available for Hire</span>
+        </div>
+        <a href="#contact-section" class="btn btn-primary nav-cta">Get in Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION (KEEP EXACT HERO UNCHANGED) ==================== -->
+  <section class="hero-section" id="hero">
+    <!-- Ambient Background Pastel Orbs -->
+    <div class="ambient-glow orb-1"></div>
+    <div class="ambient-glow orb-2"></div>
+    <div class="ambient-glow orb-3"></div>
+
+    <!-- Geometric SVG Structural Lines -->
+    <svg class="hero-svg-grid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" preserveAspectRatio="none">
+      <path class="draw-line line-main" d="M 40 420 L 220 420 L 220 180 L 40 180 Z" />
+      <path class="draw-line line-horizontal" d="M 40 320 L 680 320" />
+      <path class="draw-line line-stats-box" d="M 220 520 L 680 520 L 680 320" />
+      <polygon class="draw-shape diamond" points="50,260 65,245 80,260 65,275" />
+      <polygon class="draw-shape diamond-inner" points="55,260 65,250 75,260 65,270" />
+      <path class="draw-line plus-mark" d="M 35 180 H 45 M 40 175 V 185" />
+      <path class="draw-line plus-mark" d="M 675 320 H 685 M 680 315 V 325" />
+    </svg>
+
+    <div class="hero-container">
+      <!-- Left Column: Typography & Metrics -->
+      <div class="hero-content">
+        <div class="greeting-wrapper">
+          <h1 class="hero-greeting animate-reveal delay-1">Hello,</h1>
+        </div>
+
+        <div class="title-wrapper">
+          <h2 class="hero-name animate-reveal delay-2">I’m Amir Faysal</h2>
+        </div>
+
+        <p class="hero-bio animate-reveal delay-3">
+          I bridge product strategy and full-stack engineering, leading scalable software from roadmap to clean code.
+        </p>
+
+        <!-- Metrics / Stats Section -->
+        <div class="hero-stats animate-reveal delay-4">
+          <div class="stat-card" data-tilt>
+            <div class="stat-value">
+              <span class="counter" data-target="4">0</span><span class="plus-sign">+</span>
+            </div>
+            <div class="stat-label">
+              <span>YEARS</span>
+              <span>EXPERIENCE</span>
+            </div>
+          </div>
+
+          <div class="stat-card" data-tilt>
+            <div class="stat-value">
+              <span class="counter" data-target="10" data-suffix="K">0</span><span class="plus-sign">+</span>
+            </div>
+            <div class="stat-label">
+              <span>USERS</span>
+              <span>IMPACTED</span>
+            </div>
+          </div>
+
+          <div class="stat-card" data-tilt>
+            <div class="stat-value">
+              <span class="counter" data-target="20">0</span><span class="plus-sign">+</span>
+            </div>
+            <div class="stat-label">
+              <span>PROJECTS</span>
+              <span>SHIPPED</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action Buttons -->
+        <div class="hero-cta-group animate-reveal delay-5">
+          <a href="#competencies-section" class="btn btn-solid">
+            <span>Explore Portfolio</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact-section" class="btn btn-outline">
+            <span>Work With Me</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Visual Portrait -->
+      <div class="hero-visual animate-visual delay-3">
+        <div class="portrait-frame">
+          <div class="portrait-halo"></div>
+          <div class="portrait-card">
+            <img src="portrait.jpg" alt="Amir Faysal" class="portrait-img" id="portraitImg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 1: CORE COMPETENCIES ==================== -->
+  <section id="competencies-section" class="comp-section">
+    <div class="comp-container">
+      <!-- LEFT COLUMN: 60% Width -->
+      <div class="comp-left">
+        <header class="comp-header">
+          <h1 class="comp-title">Core<br>Competencies</h1>
+          <p class="comp-subtitle">The product skills that set direction, and the engineering stack that ships it.</p>
+        </header>
+
+        <div class="comp-grid">
+          <!-- Strategy -->
+          <div class="comp-category">
+            <div class="comp-cat-header">
+              <span>STRATEGY</span>
+              <span class="num">01</span>
+            </div>
+            <ul class="comp-skill-list">
+              <li class="comp-skill-item" data-skill="Product Strategy">
+                <span class="skill-name">Product Strategy</span>
+                <span class="skill-arrow">↗</span>
+              </li>
+              <li class="comp-skill-item" data-skill="Digital Scaling">
+                <span class="skill-name">Digital Scaling</span>
+                <span class="skill-arrow">↗</span>
+              </li>
+              <li class="comp-skill-item" data-skill="Roadmapping">
+                <span class="skill-name">Roadmapping</span>
+                <span class="skill-arrow">↗</span>
+              </li>
+              <li class="comp-skill-item" data-skill="Market Analysis">
+                <span class="skill-name">Market Analysis</span>
+                <span class="skill-arrow">↗</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Execution -->
+          <div class="comp-category">
+            <div class="comp-cat-header">
+              <span>EXECUTION</span>
+              <span class="num">02</span>
+            </div>
+            <ul class="comp-skill-list">
+              <li class="comp-skill-item" data-skill="Agile & SCRUM">
+                <span class="skill-name">Agile & SCRUM</span>
+                <span class="skill-arrow">↗</span>
+              </li>
+              <li class="comp-skill-item" data-skill="Data-Driven Decisions">
+                <span class="skill-name">Data-Driven Decisions</span>
+                <span class="skill-arrow">↗</span>
+              </li>
+              <li class="comp-skill-item" data-skill="A/B Testing">
+                <span class="skill-name">A/B Testing</span>
+                <span class="skill-arrow">↗</span>
+              </li>
+              <li class="comp-skill-item" data-skill="KPI Monitoring">
+                <span class="skill-name">KPI Monitoring</span>
+                <span class="skill-arrow">↗</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- User & CX -->
+          <div class="comp-category">
+            <div class="comp-cat-header">
+              <span>USER & CX</span>
+              <span class="num">03</span>
+            </div>
+            <ul class="comp-skill-list">
+              <li class="comp-skill-item" data-skill="User Research">
+                <span class="skill-name">User Research</span>
+                <span class="skill-arrow">↗</span>
+              </li>
+              <li class="comp-skill-item" data-skill="CX Design">
+                <span class="skill-name">CX Design</span>
+                <span class="skill-arrow">↗</span>
+              </li>
+              <li class="comp-skill-item" data-skill="Product-Led Growth">
+                <span class="skill-name">Product-Led Growth</span>
+                <span class="skill-arrow">↗</span>
+              </li>
+              <li class="comp-skill-item" data-skill="Retention Optimization">
+                <span class="skill-name">Retention Optimization</span>
+                <span class="skill-arrow">↗</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- AI & Automation -->
+          <div class="comp-category">
+            <div class="comp-cat-header">
+              <span>AI & AUTOMATION</span>
+              <span class="num">04</span>
+            </div>
+            <ul class="comp-skill-list">
+              <li class="comp-skill-item" data-skill="AI Agent Design">
+                <span class="skill-name">AI Agent Design</span>
+                <span class="skill-arrow">↗</span>
+              </li>
+              <li class="comp-skill-item" data-skill="Prompt Engineering">
+                <span class="skill-name">Prompt Engineering</span>
+                <span class="skill-arrow">↗</span>
+              </li>
+              <li class="comp-skill-item" data-skill="Workflow Automation">
+                <span class="skill-name">Workflow Automation</span>
+                <span class="skill-arrow">↗</span>
+              </li>
+              <li class="comp-skill-item" data-skill="LLM Integration">
+                <span class="skill-name">LLM Integration</span>
+                <span class="skill-arrow">↗</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="comp-footer-scroll">
+          <button onclick="scrollToSection('timeline-section')">
+            <span>Scroll down to Timeline</span> ↓
+          </button>
+          <span class="comp-footer-tag">Systems / Automation / Product</span>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: 40% Width (Inspector Panel) -->
+      <div class="comp-right">
+        <div class="inspector-panel" id="skillInspector">
+          <span class="inspector-tag">05 // INDUSTRY EXPERTISE</span>
+          <h3 class="inspector-title" id="inspectorTitle">Industry Expertise</h3>
+          <p class="inspector-desc" id="inspectorDesc">Hover or tap any skill on the left to inspect detailed target pillars and execution parameters.</p>
+
+          <div class="inspector-pillars" id="inspectorPillars">
+            <div class="pillar-row"><span class="p-num">01</span><span>EdTech & E-Learning</span></div>
+            <div class="pillar-row"><span class="p-num">02</span><span>FinTech & Secure Transactions</span></div>
+            <div class="pillar-row"><span class="p-num">03</span><span>MSME SaaS Solutions</span></div>
+            <div class="pillar-row"><span class="p-num">04</span><span>Agile Leadership</span></div>
+            <div class="pillar-row"><span class="p-num">05</span><span>System Architecture & API Design</span></div>
+            <div class="pillar-row"><span class="p-num">06</span><span>AI & Automation Workflows</span></div>
+          </div>
+
+          <div class="inspector-footer">
+            <span>STATUS: SHIPPED & VERIFIED</span>
+            <span>RATING: PRACTITIONER</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 2: CAREER TIMELINE ==================== -->
+  <section id="timeline-section" class="timeline-section">
+    <div class="timeline-container">
+      <!-- LEFT COLUMN: 55% Timeline List -->
+      <div class="timeline-left">
+        <header class="timeline-header">
+          <h1 class="timeline-title">Career<br>Timeline</h1>
+          <p class="timeline-subtitle">From associate to product executive — a trajectory of ownership and impact.</p>
+        </header>
+
+        <div class="timeline-list" id="timelineList">
+          <!-- Role 0 -->
+          <div class="timeline-item active" data-index="0">
+            <div class="t-node"><span class="t-dot"></span><span class="t-line"></span></div>
+            <div class="t-info">
+              <div class="t-role-header">
+                <h3>Product Executive</h3>
+                <span class="t-period">May 2026 — Present</span>
+              </div>
+              <div class="t-meta">
+                <span class="t-company">Shareviral</span>
+                <span class="t-location">📍 San Jose, CA · Remote</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 1 -->
+          <div class="timeline-item" data-index="1">
+            <div class="t-node"><span class="t-dot"></span><span class="t-line"></span></div>
+            <div class="t-info">
+              <div class="t-role-header">
+                <h3>Product Executive</h3>
+                <span class="t-period">Aug 2025 — May 2026</span>
+              </div>
+              <div class="t-meta">
+                <span class="t-company">Programming Hero</span>
+                <span class="t-location">📍 Dhaka, Bangladesh · Hybrid</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 2 -->
+          <div class="timeline-item" data-index="2">
+            <div class="t-node"><span class="t-dot"></span><span class="t-line"></span></div>
+            <div class="t-info">
+              <div class="t-role-header">
+                <h3>Technical Product Lead</h3>
+                <span class="t-period">Aug 2024 — July 2025</span>
+              </div>
+              <div class="t-meta">
+                <span class="t-company">Genzam IT</span>
+                <span class="t-location">📍 Palma Campania, Italy · Remote</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 3 -->
+          <div class="timeline-item" data-index="3">
+            <div class="t-node"><span class="t-dot"></span><span class="t-line"></span></div>
+            <div class="t-info">
+              <div class="t-role-header">
+                <h3>Product Developer</h3>
+                <span class="t-period">May 2024 — Aug 2024</span>
+              </div>
+              <div class="t-meta">
+                <span class="t-company">Studio Alterity</span>
+                <span class="t-location">📍 Khulna, Bangladesh · Onsite</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 4 -->
+          <div class="timeline-item" data-index="4">
+            <div class="t-node"><span class="t-dot"></span><span class="t-line"></span></div>
+            <div class="t-info">
+              <div class="t-role-header">
+                <h3>Product Consultant</h3>
+                <span class="t-period">Sep 2023 — Apr 2024</span>
+              </div>
+              <div class="t-meta">
+                <span class="t-company">EU Support</span>
+                <span class="t-location">📍 Poland · Remote</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 5 -->
+          <div class="timeline-item" data-index="5">
+            <div class="t-node"><span class="t-dot"></span><span class="t-line"></span></div>
+            <div class="t-info">
+              <div class="t-role-header">
+                <h3>Junior Product Lead</h3>
+                <span class="t-period">Nov 2021 — July 2023</span>
+              </div>
+              <div class="t-meta">
+                <span class="t-company">Renix Lab Ltd</span>
+                <span class="t-location">📍 Dhaka, Bangladesh · Remote</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 6 -->
+          <div class="timeline-item" data-index="6">
+            <div class="t-node"><span class="t-dot"></span></div>
+            <div class="t-info">
+              <div class="t-role-header">
+                <h3>Associate Product</h3>
+                <span class="t-period">Jan 2021 — Aug 2021</span>
+              </div>
+              <div class="t-meta">
+                <span class="t-company">LSKIT</span>
+                <span class="t-location">📍 Khulna, Bangladesh · Onsite</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="comp-footer-scroll">
+          <button onclick="scrollToSection('techstack-section')">
+            <span>Scroll down to Tech Stack</span> ↓
+          </button>
+          <span>7 ROLES / CONTINUOUS PROGRESSION</span>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: 45% Role Detail Panel -->
+      <div class="timeline-right">
+        <div class="role-detail-panel" id="roleDetailPanel">
+          <span class="panel-tag">💼 DEPLOYMENT BLUEPRINT & IMPACT SUMMARY</span>
+          
+          <div class="panel-main">
+            <span class="r-period" id="rolePeriod">May 2026 — Present • San Jose, CA · Remote</span>
+            <h2 class="r-title" id="roleTitle">Product Executive</h2>
+            <h3 class="r-company" id="roleCompany">Shareviral</h3>
+
+            <div class="r-divider"></div>
+
+            <span class="r-bullets-label">KEY METRICS & DELIVERY</span>
+            <div class="r-bullets" id="roleBullets">
+              <div class="bullet-row"><span class="b-idx">[01]</span><p>Own product roadmap end-to-end: user research → prioritization → launch → iteration</p></div>
+              <div class="bullet-row"><span class="b-idx">[02]</span><p>Drive data-informed decisions with metrics, experiments, and analytics to improve growth & retention</p></div>
+              <div class="bullet-row"><span class="b-idx">[03]</span><p>Lead cross-functional collaboration between engineering, design, and growth teams</p></div>
+            </div>
+          </div>
+
+          <div class="inspector-footer">
+            <span>IMPACT RATIO: 100% OWNERSHIP</span>
+            <span>TIME IN INDUSTRY: 5+ YEARS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 3: TECH STACK ==================== -->
+  <section id="techstack-section" class="dark-section techstack-section">
+    <div class="dark-container">
+      <div class="section-badge text-cyan">
+        <span>03 // TECH STACK</span>
+        <span class="badge-dot cyan"></span>
+      </div>
+      <h1 class="dark-title">TECH STACK</h1>
+      <p class="dark-subtitle">Languages, frameworks, and infrastructure powering production-grade systems.</p>
+
+      <div class="tech-grid">
+        <!-- Languages -->
+        <div class="tech-card">
+          <div class="t-card-header">
+            <span class="t-dot cyan"></span>
+            <h3>LANGUAGES</h3>
+          </div>
+          <div class="t-pills">
+            <span class="t-pill">JavaScript</span>
+            <span class="t-pill">TypeScript</span>
+            <span class="t-pill">Python</span>
+            <span class="t-pill">C / C++</span>
+          </div>
+          <div class="t-card-footer"><span>SYS_CAT // 01</span><span>READY</span></div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="tech-card">
+          <div class="t-card-header">
+            <span class="t-dot cyan"></span>
+            <h3>FRONTEND</h3>
+          </div>
+          <div class="t-pills">
+            <span class="t-pill">React.js</span>
+            <span class="t-pill">Next.js</span>
+            <span class="t-pill">TailwindCSS</span>
+            <span class="t-pill">shadcn/ui</span>
+            <span class="t-pill">HTML5 / CSS3 / SCSS</span>
+          </div>
+          <div class="t-card-footer"><span>SYS_CAT // 02</span><span>READY</span></div>
+        </div>
+
+        <!-- Backend & DB -->
+        <div class="tech-card">
+          <div class="t-card-header">
+            <span class="t-dot cyan"></span>
+            <h3>BACKEND & DB</h3>
+          </div>
+          <div class="t-pills">
+            <span class="t-pill">Node.js</span>
+            <span class="t-pill">Express.js</span>
+            <span class="t-pill">FastAPI</span>
+            <span class="t-pill">MongoDB / Mongoose</span>
+            <span class="t-pill">PostgreSQL / Prisma</span>
+          </div>
+          <div class="t-card-footer"><span>SYS_CAT // 03</span><span>READY</span></div>
+        </div>
+
+        <!-- DevOps & Tools -->
+        <div class="tech-card">
+          <div class="t-card-header">
+            <span class="t-dot cyan"></span>
+            <h3>DEVOPS & TOOLS</h3>
+          </div>
+          <div class="t-pills">
+            <span class="t-pill">AWS</span>
+            <span class="t-pill">Docker</span>
+            <span class="t-pill">Vercel</span>
+            <span class="t-pill">GitHub Actions</span>
+            <span class="t-pill">Git / GitHub</span>
+          </div>
+          <div class="t-card-footer"><span>SYS_CAT // 04</span><span>READY</span></div>
+        </div>
+
+        <!-- Architecture & Systems (Wide Card) -->
+        <div class="tech-card tech-card-wide">
+          <div class="t-card-header">
+            <span class="t-dot cyan"></span>
+            <h3>ARCHITECTURE & SYSTEMS</h3>
+          </div>
+          <div class="t-pills">
+            <span class="t-pill">EdTech & E-Learning</span>
+            <span class="t-pill">FinTech & Secure Transactions</span>
+            <span class="t-pill">MSME SaaS Solutions</span>
+            <span class="t-pill">Agile Leadership</span>
+            <span class="t-pill">System Architecture & API Design</span>
+            <span class="t-pill">AI & Automation Workflows</span>
+          </div>
+          <div class="t-card-footer"><span>SYS_CAT // 05</span><span>READY</span></div>
+        </div>
+      </div>
+
+      <div class="dark-footer-bar">
+        <button onclick="scrollToSection('certificates-section')">
+          <span>Scroll down to Certificates</span> ↓
+        </button>
+        <div><span>HOST: CLOUD RUN</span> • <span>STATE: ACTIVE</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 4: CERTIFICATES ==================== -->
+  <section id="certificates-section" class="dark-section cert-section">
+    <div class="dark-container">
+      <div class="cert-top-bar">
+        <div>
+          <div class="section-badge text-amber">
+            <span>04 // CERTIFICATIONS</span>
+            <span class="badge-dot amber"></span>
+          </div>
+          <h1 class="dark-title">Certificates</h1>
+          <p class="dark-subtitle">Click any credential to inspect verification parameters, issuer validation, and core competencies.</p>
+        </div>
+        <div class="cert-stats-box">
+          <div><span class="s-label">VERIFIED CREDENTIALS</span><span class="s-val text-amber">06 / 06 ISSUED</span></div>
+          <div class="v-line"></div>
+          <div><span class="s-label">FOCUS AREAS</span><span class="s-val text-cyan">DEV & PRODUCT</span></div>
+        </div>
+      </div>
+
+      <!-- Certificates Layout Grid -->
+      <div class="cert-main-grid">
+        <!-- Active Certificate Viewer (Left Theater) -->
+        <div class="cert-viewer" id="certViewer">
+          <div class="c-viewer-top">
+            <span class="c-type-badge dev" id="certTypeBadge">DEV</span>
+            <span class="c-date" id="certDate">Dec 2024</span>
+          </div>
+
+          <div class="c-viewer-body">
+            <span class="c-issuer" id="certIssuer">Programming Hero</span>
+            <h2 class="c-title" id="certTitle">Complete Web Development Bootcamp</h2>
+            <div class="c-cred-box">
+              <span>CREDENTIAL ID:</span>
+              <span class="c-id" id="certId">PH-CWD-2024-819</span>
+            </div>
+
+            <div class="c-skills-box">
+              <span class="c-skills-label">SKILLS & COMPETENCIES:</span>
+              <div class="c-skills-list" id="certSkills">
+                <span class="c-skill-tag">HTML5</span>
+                <span class="c-skill-tag">CSS3</span>
+                <span class="c-skill-tag">JavaScript</span>
+                <span class="c-skill-tag">React.js</span>
+                <span class="c-skill-tag">Node.js</span>
+                <span class="c-skill-tag">Express.js</span>
+                <span class="c-skill-tag">MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="c-viewer-footer">
+            <span class="c-status">✔ VERIFIED ON-CHAIN</span>
+            <span class="c-prompt">CLICK CARDS TO SWITCH</span>
+          </div>
+        </div>
+
+        <!-- Certificate Selection List (Right Side) -->
+        <div class="cert-list" id="certList">
+          <!-- Cert 0 -->
+          <div class="cert-item active" data-cert="0">
+            <div class="c-item-left">
+              <span class="c-item-title">Complete Web Development Bootcamp</span>
+              <span class="c-item-sub">Programming Hero • Dec 2024</span>
+            </div>
+            <span class="c-item-badge dev">DEV</span>
+          </div>
+
+          <!-- Cert 1 -->
+          <div class="cert-item" data-cert="1">
+            <div class="c-item-left">
+              <span class="c-item-title">Next Level Web Development</span>
+              <span class="c-item-sub">Programming Hero • May 2025</span>
+            </div>
+            <span class="c-item-badge dev">DEV</span>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-item" data-cert="2">
+            <div class="c-item-left">
+              <span class="c-item-title">Reactive Accelerator</span>
+              <span class="c-item-sub">Learn with Sumit • Aug 2024</span>
+            </div>
+            <span class="c-item-badge dev">DEV</span>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-item" data-cert="3">
+            <div class="c-item-left">
+              <span class="c-item-title">Data Structure & Algorithm in C++</span>
+              <span class="c-item-sub">Phitron • Nov 2023</span>
+            </div>
+            <span class="c-item-badge dev">DEV</span>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-item" data-cert="4">
+            <div class="c-item-left">
+              <span class="c-item-title">Product Management Fundamentals</span>
+              <span class="c-item-sub">Bohubrihi • Mar 2023</span>
+            </div>
+            <span class="c-item-badge prod">PROD</span>
+          </div>
+
+          <!-- Cert 5 -->
+          <div class="cert-item" data-cert="5">
+            <div class="c-item-left">
+              <span class="c-item-title">Advanced Product Strategy</span>
+              <span class="c-item-sub">Keeron • Jun 2023</span>
+            </div>
+            <span class="c-item-badge prod">PROD</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dark-footer-bar">
+        <button onclick="scrollToSection('startup-section')">
+          <span>Scroll down to Startup</span> ↓
+        </button>
+        <div><span>STATUS: ALL COMPLETED</span> • <span>YEAR: 2026</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 5: STARTUP CHRONICLE ==================== -->
+  <section id="startup-section" class="dark-section startup-section">
+    <div class="dark-container">
+      <div class="cert-top-bar">
+        <div>
+          <div class="section-badge text-orange">
+            <span>05 // STARTUP CHRONICLE</span>
+            <span class="badge-dot orange"></span>
+          </div>
+          <h1 class="dark-title">Thinkystorm</h1>
+          <p class="dark-subtitle">An overview of building, launching, and gracefully sun-setting a solo software enterprise.</p>
+        </div>
+
+        <div class="cert-stats-box">
+          <div><span class="s-label">ENTERPRISE STATUS</span><span class="s-val text-red">SUNSET / COMPLETE</span></div>
+          <div class="v-line"></div>
+          <div><span class="s-label">KEY TAKEAWAY</span><span class="s-val text-orange">PRICELESS WISDOM</span></div>
+        </div>
+      </div>
+
+      <!-- Startup Card -->
+      <div class="startup-card">
+        <div class="s-card-top">
+          <div class="s-badges">
+            <span class="s-badge red"><span class="dot-small"></span> FAILED STARTUP</span>
+            <span class="s-badge green"><span class="dot-small"></span> PRICELESS LESSONS</span>
+          </div>
+          <span class="s-date-pill">Jan 2023 — July 2023</span>
+        </div>
+
+        <div class="s-card-title-block">
+          <h2 class="s-role-title">Founder & CEO</h2>
+          <div class="s-company-line">
+            <span class="s-comp-name">Thinkystorm</span>
+            <span class="s-comp-sub">(Tech Startup)</span>
+          </div>
+        </div>
+
+        <blockquote class="s-quote">
+          "I built Thinkystorm from zero as a solo founder — idea, product, architecture, and everything in between. Six months in, the numbers told a story I couldn't ignore, and I made the hardest call of my career: shutting it down. That decision taught me more about product-market fit, ruthless prioritization, and knowing when to pivot than any success could have."
+        </blockquote>
+
+        <div class="s-metrics-grid">
+          <div class="s-metric-box">
+            <span class="s-m-val">6 Months</span>
+            <span class="s-m-lbl">IDEA — SUNSET</span>
+          </div>
+          <div class="s-metric-box">
+            <span class="s-m-val">0 → 1</span>
+            <span class="s-m-lbl">MVP SHIPPED SOLO</span>
+          </div>
+          <div class="s-metric-box">
+            <span class="s-m-val">100%</span>
+            <span class="s-m-lbl">OWNERSHIP & LESSONS</span>
+          </div>
+        </div>
+
+        <div class="s-tags-section">
+          <span class="s-tags-label">APPLIED STARTUP COMPETENCIES</span>
+          <div class="s-tags-list">
+            <span class="s-tag">Leadership</span>
+            <span class="s-tag">Product Strategy</span>
+            <span class="s-tag">MVP Development</span>
+            <span class="s-tag">Full-Stack Architecture</span>
+            <span class="s-tag">Business Acumen</span>
+          </div>
+        </div>
+
+        <!-- ThinkyStorm Photo Gallery -->
+        <div class="s-gallery-section">
+          <span class="s-tags-label">THINKYSTORM ARCHIVES & TEAM GALLERY</span>
+          <div class="s-gallery-grid">
+            <div class="gallery-card" onclick="openLightbox('assets/images/thinkystorm-1.jpg', 'Founder & Brand Launch — Amir Faysal @ ThinkyStorm HQ')">
+              <img src="assets/images/thinkystorm-1.jpg" alt="Amir Faysal @ ThinkyStorm HQ" class="gallery-img">
+              <div class="gallery-overlay">
+                <span class="g-badge">FOUNDER</span>
+                <span class="g-caption">Amir Faysal @ ThinkyStorm HQ 🔍</span>
+              </div>
+            </div>
+
+            <div class="gallery-card" onclick="openLightbox('assets/images/thinkystorm-2.jpg', 'Core Engineering & Product Team — ThinkyStorm')">
+              <img src="assets/images/thinkystorm-2.jpg" alt="ThinkyStorm Team" class="gallery-img">
+              <div class="gallery-overlay">
+                <span class="g-badge">CORE TEAM</span>
+                <span class="g-caption">ThinkyStorm Core Team 🔍</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dark-footer-bar">
+        <button onclick="scrollToSection('awards-section')">
+          <span>Scroll down to Awards</span> ↓
+        </button>
+        <div><span>STATUS: COMPLETE SHIELD</span> • <span>PROJECT: THINKYSTORM</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 6: AWARDS (CHAMPIONSHIP HALL OF FAME) ==================== -->
+  <section id="awards-section" class="dark-section victory-section">
+    <!-- Ambient Golden Starlight Aura -->
+    <div class="victory-gold-aura"></div>
+
+    <div class="dark-container">
+      <div class="cert-top-bar">
+        <div>
+          <div class="section-badge text-yellow">
+            <span>06 // CHAMPIONSHIP HALL OF FAME</span>
+            <span class="badge-dot yellow"></span>
+          </div>
+          <h1 class="dark-title victory-main-title">Victories & Honors</h1>
+          <p class="dark-subtitle">National-level hackathons and project showcases demonstrating top-tier execution, speed, and architectural leadership under pressure.</p>
+        </div>
+
+        <div class="cert-stats-box victory-stats-box">
+          <div><span class="s-label">NATIONAL WINS</span><span class="s-val text-yellow">2X CHAMPION</span></div>
+          <div class="v-line"></div>
+          <div><span class="s-label">PERFORMANCE</span><span class="s-val text-cyan">1ST PLACE</span></div>
+        </div>
+      </div>
+
+      <!-- Championship Arena Grid -->
+      <div class="victory-arena-grid">
+        <!-- Victory Card 1: NWU CSE Fest 2023 -->
+        <div class="victory-card gold-pedestal" onclick="openLightbox('assets/images/victory-nwu.jpg', 'Project Showcase Champion — NWU CSE Fest 2023 Prize Giving Ceremony')">
+          <div class="v-card-shine"></div>
+          <div class="v-img-frame">
+            <img src="assets/images/victory-nwu.jpg" alt="NWU CSE Fest 2023 Victory" class="v-img">
+            <div class="v-img-overlay">
+              <span class="v-crown-badge gold">👑 1ST PLACE</span>
+              <span class="v-date-tag">Dec 2023</span>
+            </div>
+          </div>
+          <div class="v-card-body">
+            <div class="v-header-row">
+              <div class="v-trophy-icon gold">🏆</div>
+              <div>
+                <span class="v-cat-tag text-yellow">PROJECT SHOWCASE</span>
+                <h3 class="v-title">Project Showcase Champion</h3>
+              </div>
+            </div>
+            <p class="v-event-name">NWU CSE Fest 2023 • North Western University</p>
+            <div class="v-tags-row">
+              <span class="v-tag gold">Software Architecture</span>
+              <span class="v-tag">Live System Demo</span>
+              <span class="v-tag">National Win</span>
+            </div>
+            <div class="v-card-footer">
+              <span>ORGANIZED BY: CSE, NWU</span>
+              <span class="v-inspect-btn">Inspect Photo 🔍</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Victory Card 2: Hackathon Champion (EWU Robo Fest 2024) -->
+        <div class="victory-card cyan-pedestal" onclick="openLightbox('assets/images/victory-hackathon.jpg', 'National Hackathon Champion — EWU Robo Fest 2024 Stage Award Ceremony')">
+          <div class="v-card-shine"></div>
+          <div class="v-img-frame">
+            <img src="assets/images/victory-hackathon.jpg" alt="Hackathon Champion Victory" class="v-img">
+            <div class="v-img-overlay">
+              <span class="v-crown-badge cyan">⚡ NATIONAL CHAMPION</span>
+              <span class="v-date-tag">May 2024</span>
+            </div>
+          </div>
+          <div class="v-card-body">
+            <div class="v-header-row">
+              <div class="v-trophy-icon cyan">🥇</div>
+              <div>
+                <span class="v-cat-tag text-cyan">NATIONAL HACKATHON</span>
+                <h3 class="v-title">Hackathon Champion</h3>
+              </div>
+            </div>
+            <p class="v-event-name">EWU Robo Fest 2024 • East West University</p>
+            <div class="v-tags-row">
+              <span class="v-tag cyan">24-Hour Rapid Code</span>
+              <span class="v-tag">Prime Bank Sponsored</span>
+              <span class="v-tag">Programming Hero</span>
+            </div>
+            <div class="v-card-footer">
+              <span>ORGANIZED BY: PRIME BANK & EWU</span>
+              <span class="v-inspect-btn">Inspect Photo 🔍</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="victory-honor-pill">
+        <div class="v-pill-content">
+          <span class="v-pill-spark">✨</span>
+          <span>Proven Track Record of Excellence in High-Stakes Competitions & Production Shipping</span>
+        </div>
+      </div>
+
+      <div class="dark-footer-bar">
+        <button onclick="scrollToSection('hero')">
+          ↑ <span>Back to Top</span>
+        </button>
+        <div><span>STATUS: EXCELLENCE DETECTED</span> • <span>AWARDS & HONORS</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT & FOOTER SECTION ==================== -->
+  <section class="dark-section contact-section" id="contact-section">
+    <!-- Ambient Backdrop Aura -->
+    <div class="contact-aura"></div>
+
+    <div class="dark-container">
+      <div class="contact-box">
+        <div class="section-badge text-cyan">
+          <span>07 // CONTACT & COLLABORATION</span>
+          <span class="badge-dot cyan"></span>
+        </div>
+
+        <h2 class="contact-heading">Let's Build Something Great Together</h2>
+        <p class="contact-subtext">Looking for a lead engineer or strategic full-stack partner to transform your product roadmap into production code?</p>
+
+        <!-- Email Action Card -->
+        <div class="contact-email-card" id="emailCard">
+          <div class="e-icon-box">✉️</div>
+          <div class="e-info">
+            <span class="e-label">DIRECT EMAIL</span>
+            <span class="e-email">amir.faysal@example.com</span>
+          </div>
+          <button class="btn btn-solid e-copy-btn" id="emailBtn">
+            <span>Copy Email</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          </button>
+        </div>
+
+        <!-- Social Channels Grid -->
+        <div class="contact-social-grid">
+          <a href="https://github.com" target="_blank" rel="noopener" class="c-social-card">
+            <div class="s-icon">💻</div>
+            <div class="s-text">
+              <span class="s-name">GitHub</span>
+              <span class="s-sub">Open Source & Code</span>
+            </div>
+            <span class="s-arrow">↗</span>
+          </a>
+
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="c-social-card">
+            <div class="s-icon">💼</div>
+            <div class="s-text">
+              <span class="s-name">LinkedIn</span>
+              <span class="s-sub">Professional Network</span>
+            </div>
+            <span class="s-arrow">↗</span>
+          </a>
+
+          <a href="https://twitter.com" target="_blank" rel="noopener" class="c-social-card">
+            <div class="s-icon">𝕏</div>
+            <div class="s-text">
+              <span class="s-name">Twitter / X</span>
+              <span class="s-sub">Product Insights</span>
+            </div>
+            <span class="s-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="dark-footer-bar">
+        <span>© 2026 Amir Faysal. Engineered with precision & clean code.</span>
+        <button onclick="scrollToSection('hero')">↑ Back to Top</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Image Modal -->
+  <div class="lightbox-modal" id="lightboxModal" onclick="closeLightbox()">
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+      <img src="" alt="Full View" id="lightboxImg" class="lightbox-img">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
